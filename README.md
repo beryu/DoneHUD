@@ -9,7 +9,7 @@ DoneHUD.showInView(self.view)
 ```
 
 ```
-DoneHUD.showInView(self.view, "Done")
+DoneHUD.showInView(self.view, message: "Done")
 ```
 
 ## License
