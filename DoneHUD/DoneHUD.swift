@@ -23,9 +23,18 @@ public class DoneHUD: NSObject {
     private func showInView(view: UIView, message: String?) {
         // Set size of done view
         let doneViewWidth = min(view.frame.width, view.frame.height) / 2
+        var originX: CGFloat, originY: CGFloat
+        if (UIDevice.currentDevice().systemVersion as NSString).floatValue >= 8.0 {
+            originX = (view.frame.width - doneViewWidth) / 2
+            originY = (view.frame.height - doneViewWidth) / 2
+        } else {
+            let isLandscape = UIDevice.currentDevice().orientation.isLandscape
+            originX = ((isLandscape ? view.frame.height : view.frame.width) - doneViewWidth) / 2
+            originY = ((isLandscape ? view.frame.width : view.frame.height) - doneViewWidth) / 2
+        }
         let doneViewFrame = CGRectMake(
-            (view.frame.width - doneViewWidth) / 2,
-            (view.frame.height - doneViewWidth) / 2,
+            originX,
+            originY,
             doneViewWidth,
             doneViewWidth)
         self.doneView.layer.cornerRadius = 8
