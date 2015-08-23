@@ -3,7 +3,7 @@
 //  DoneAnimation
 //
 //  Created by Ryuta Kibe on 2015/08/23.
-//  Copyright (c) 2015年 blk. All rights reserved.
+//  Copyright (c) 2015 blk. All rights reserved.
 //
 
 import UIKit
@@ -34,9 +34,6 @@ public class DoneHUD: NSObject {
         // Set message
         self.doneView.setMessage(message)
         
-        // Set color of done view
-        self.doneView.backgroundColor = UIColor(white: 1, alpha: 0.8)
-
         // Start animation
         self.doneView.alpha = 0
         view.addSubview(self.doneView)

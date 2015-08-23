@@ -3,7 +3,7 @@
 //  DoneAnimation
 //
 //  Created by Ryuta Kibe on 2015/08/22.
-//  Copyright (c) 2015年 blk. All rights reserved.
+//  Copyright (c) 2015 blk. All rights reserved.
 //
 
 import UIKit
@@ -15,6 +15,7 @@ public class DoneView: UIView {
     private let lineLayer: CAShapeLayer = CAShapeLayer()
     private var message: String? = nil
     private var messageLabel: UILabel? = nil
+    private var blurView: UIView? = nil
     
     // MARK: - public methods
     
@@ -87,9 +88,17 @@ public class DoneView: UIView {
         self.message = nil
     }
     
+    override public func layoutSubviews() {
+        super.layoutSubviews()
+        self.blurView?.frame = self.bounds
+    }
+    
     // MARK: - private methods
     
     private func initialize() {
+        // Initialize properties
+        self.clipsToBounds = true
+        
         // Set default setting to line
         self.lineLayer.fillColor = UIColor.clearColor().CGColor
         self.lineLayer.anchorPoint = CGPointMake(0, 0)
@@ -98,6 +107,18 @@ public class DoneView: UIView {
         self.lineLayer.contentsScale = self.layer.contentsScale
         self.lineLayer.lineWidth = 8
         self.lineLayer.strokeColor = UIColor.blackColor().CGColor
+        
+        // Generate blur view
+        var blurView: UIView
+        if (UIDevice.currentDevice().systemVersion as NSString).floatValue >= 8.0 {
+            blurView = UIVisualEffectView(effect: UIBlurEffect(style: .ExtraLight))
+        } else {
+            blurView = UIView()
+            blurView.backgroundColor = UIColor(white: 1, alpha: 0.8)
+        }
+        self.blurView = blurView
+        self.insertSubview(blurView, atIndex: 0)
+        blurView.frame = self.bounds
     }
     
     private func animate(completion: (() -> Void)?) {
@@ -112,5 +133,4 @@ public class DoneView: UIView {
         self.lineLayer.addAnimation(pathAnimation, forKey:"strokeEndAnimation")
         CATransaction.commit()
     }
-    
 }
