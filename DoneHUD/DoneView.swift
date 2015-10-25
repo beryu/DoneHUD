@@ -29,7 +29,7 @@ public class DoneView: UIView {
         self.initialize()
     }
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initialize()
     }
@@ -58,12 +58,12 @@ public class DoneView: UIView {
     }
     
     public func drawCheck(completion: (() -> Void)?) {
-        var canvasFrame = CGRectMake(
+        let canvasFrame = CGRectMake(
             self.frame.width / 4,
             message == nil ? self.frame.height / 3 : self.frame.height / 5 * 2,
             self.frame.width / 2,
             self.frame.height / 3)
-        var path = UIBezierPath()
+        let path = UIBezierPath()
         path.moveToPoint(
             CGPointMake(canvasFrame.origin.x, canvasFrame.origin.y + canvasFrame.height / 2))
         path.addLineToPoint(
@@ -110,7 +110,7 @@ public class DoneView: UIView {
         
         // Generate blur view
         var blurView: UIView
-        if (UIDevice.currentDevice().systemVersion as NSString).floatValue >= 8.0 {
+        if #available(iOS 8.0, *) {
             blurView = UIVisualEffectView(effect: UIBlurEffect(style: .ExtraLight))
         } else {
             blurView = UIView()
