@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  DoneAnimation
+//  DoneHUD
 //
 //  Created by Ryuta Kibe on 2015/08/22.
 //  Copyright (c) 2015年 blk. All rights reserved.
