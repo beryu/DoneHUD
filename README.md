@@ -1,7 +1,7 @@
 # DoneHUD
 ![Platform](https://cocoapod-badges.herokuapp.com/p/DoneHUD/badge.svg)
 ![License](https://img.shields.io/cocoapods/l/DoneHUD.svg?style=flat)
-![Cocoapods](https://cocoapod-badges.herokuapp.com/v/DoneHUD/badge.svg)
+![CocoaPods](https://cocoapod-badges.herokuapp.com/v/DoneHUD/badge.svg)
 
 Done animation on HUD made with Swift
 
