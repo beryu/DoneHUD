@@ -11,7 +11,7 @@ Done animation on HUD made with Swift
 
 ### CocoaPods
 
-```
+```ruby
 pod 'DoneHUD'
 ```
 
@@ -20,12 +20,12 @@ pod 'DoneHUD'
 Add the [DoneHUD.swift](https://github.com/beryu/DoneHUD/blob/master/Source/DoneHUD.swift) and [DoneView.swift](https://github.com/beryu/DoneHUD/blob/master/Source/DoneView.swift) file to your project.
 
 ## Usage
-```
+```swift
 // Just show check animation
 DoneHUD.showInView(self.view)
 ```
 
-```
+```swift
 // Show check animation with message "Done"
 DoneHUD.showInView(self.view, message: "Done")
 ```
