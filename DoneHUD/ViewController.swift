@@ -11,11 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBAction func showButtonWasTapped() {
-        DoneHUD.showInView(self.view)
+        DoneHUD.showInView(view)
     }
     
     @IBAction func showWithMessageButtonWasTapped() {
-        DoneHUD.showInView(self.view, message: "Done")
+        DoneHUD.showInView(view, message: "Done")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
