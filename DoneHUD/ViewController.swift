@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         DoneHUD.showInView(self.view, message: "Done")
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
 }
 
