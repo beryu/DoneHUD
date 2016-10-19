@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A28881E26623F05F7FB79A245DF9B6B2334C17C3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A28881E26623F05F7FB79A245DF9B6B2334C17C3" : 9223372036854775807,
+    "BD6B3C3C273361C3A5F0C96A267A9369818B0FBD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4E486D1F-CAF1-4915-AE42-0BDDEFCCFE1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A28881E26623F05F7FB79A245DF9B6B2334C17C3" : "DoneHUD\/",
+    "BD6B3C3C273361C3A5F0C96A267A9369818B0FBD" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DoneHUD",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DoneHUD.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/salmankhann\/DoneHUD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A28881E26623F05F7FB79A245DF9B6B2334C17C3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/chemjournal.visualstudio.com\/DefaultCollection\/Octup\/_git\/iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BD6B3C3C273361C3A5F0C96A267A9369818B0FBD"
+    }
+  ]
+}
