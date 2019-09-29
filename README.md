@@ -22,12 +22,12 @@ Add the [DoneHUD.swift](https://github.com/beryu/DoneHUD/blob/master/Source/Done
 ## Usage
 ```swift
 // Just show check animation
-DoneHUD.showInView(self.view)
+DoneHUD.showInView(view)
 ```
 
 ```swift
 // Show check animation with message "Done"
-DoneHUD.showInView(self.view, message: "Done")
+DoneHUD.showInView(view, message: "Done")
 ```
 
 ## Requirements
