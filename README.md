@@ -31,7 +31,7 @@ DoneHUD.showInView(self.view, message: "Done")
 ```
 
 ## Requirements
-* Swift4.0
+* Swift 5.0
 * iOS 8.0
 * ARC
 
