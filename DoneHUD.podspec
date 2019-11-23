@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "DoneHUD"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
+  s.swift_versions = "5.0"
   s.summary = "Done animation on HUD made with Swift"
   s.homepage = "https://github.com/beryu/DoneHUD"
   s.screenshots = "https://github.com/beryu/DoneHUD/raw/master/DoneHUD_demo.gif"
